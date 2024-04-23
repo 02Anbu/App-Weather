@@ -357,9 +357,9 @@
 }
 
 .image-wrapper{
-  margin-left: 410px;
+  margin-left: 375px;
   margin-top: -110px;
-  margin-right: -630px; /*Adjust the margin between each image */
+  margin-right: -670px; /*Adjust the margin between each image */
   filter: brightness(80%);
   width: 100px;
   height: 90px;
