@@ -1,0 +1,310 @@
+  <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Condition</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    </head>
+    <body style="background-color: rgb(16,15,15);">
+  
+    
+      <!---Weather-->
+    <div class="weather-container"> 
+      <div class="weather">
+        <div class="city-details">
+          <img src="Icons for cities/london.svg" class="city-icon" />
+          <div class="city-info">
+            <select id="dropdown-city">
+              <option value="london" selected>london</option> 
+              <option value="Juba">Juba</option>  
+              <option value="Kolkata">Kolkata</option>
+            </select>
+          </div>
+        </div>  
+        
+  
+      <!-- Temperature -->
+      <div class="temp">
+      <span class="condition">Temp °C <br> <br><b></b></span> 
+      <span class="pressure">Humidity<br><br> <b></b><span class="percentage"></span></span>
+      </div> <br> <br>
+      <div class="temp">
+      <span class="condition">Temp F<br> <br> <b></b></span> 
+      <span class="pressure">Precipitation<br> <br><b></b><span class="percentage"></span></span>
+    </div>
+
+    
+        <!-- Datetime -->
+        <div class="city-datetime">
+          <div class="datetime">
+            <span class="time">
+              <span class="hour-minute">10:10</span>
+              <span class="seconds">: 44</span>  
+            </span>
+            <span class="am-pm">
+              <img src="Images icons/amState.png" alt="AM" />
+            </span>
+            <br />
+            <span class="date">01-Mar-2024</span>
+          </div>
+        </div>
+      
+        <!-- Weather Timeline -->
+          <div class="weather-timeline">
+          <div class="timeline-cell now">Now</div>
+          <div class="timeline-cell one">11 AM</div>
+          <div class="timeline-cell two">12 PM</div>
+          <div class="timeline-cell three">1 PM</div>
+          <div class="timeline-cell four">2 PM</div>
+          <div class="timeline-cell five">3 PM</div>
+          <div class="timeline-cell six">4 PM</div>
+        </div>
+    
+  <!-- Images -->
+  <div class="image-container">
+    <div class="image-wrapper">
+      <img src="Weather Icons/cloudyIcon.svg" alt="Cloudy" class="weather-icon">
+    </div>
+    <div class="image-wrapper">
+      <img src="Weather Icons/rainyIcon.svg" alt="Rainy" class="weather-icon">
+    </div>
+    <div class="image-wrapper">
+      <img src="Weather Icons/windyIcon.svg" alt="Windy" class="weather-icon">
+    </div>
+    <div class="image-wrapper">
+      <img src="Weather Icons/rainyIcon.svg" alt="Rainy" class="weather-icon">
+    </div>
+    <div class="image-wrapper">
+      <img src="Weather Icons/windyIcon.svg" alt="Windy" class="weather-icon">
+    </div>
+    <div class="image-wrapper">
+      <img src="Weather Icons/rainyIcon.svg" alt="Rainy" class="weather-icon">
+    </div>
+    <div class="image-wrapper">
+      <img src="Weather Icons/rainyIcon.svg" alt="Rainy" class="weather-icon">
+    </div>
+  </div>
+    
+    <!-- Image positions under the given numbers -->
+    <div class="image-number">
+      <div class="Number"></div> 
+      <div class="Number"></div>
+      <div class="Number"></div>
+      <div class="Number"></div>
+      <div class="Number"></div>
+      <div class="Number"></div>
+      <div class="Number"></div>
+    </div>
+      </div>
+    </div>
+
+    
+  <!-- Another Layout -->
+  <div class="layout-container">
+    <div class="grid-container">
+      <div class="world">
+
+        <div class="top-cities">
+          <h2 class="heading">Top cities around the world</h2>
+          <div class="cool">
+            <div id="city1Button" class="city1-button">
+              <span class="imghover1">
+                <img src="Weather Icons/sunnyIcon.svg" alt="City 1">
+              </span>
+            </div>
+            <div id="city2Button" class="city2-button">
+              <span class="imghover2">
+                <img src="Weather Icons/snowflakeIcon.svg" alt="City 2">
+              </span>
+            </div>
+            <div id="city3Button" class="city3-button">
+              <span class="imghover3">
+                <img src="Weather Icons/rainyIconBlack.svg" alt="City 3">
+              </span>
+            </div>
+          </div>
+          <div class="Top">
+            <p><b>Display Top</b></p>
+          </div>
+          <div class="box">
+            <div class="dropdown">
+                <select id="Number">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <div class="arrow-up"></div>
+                <div class="arrow-down"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flexbox">
+          <div class="nested-flexbox">
+            <p class="text">London</p>
+            <p class="text1">10.00 AM</p>
+            <p class="text2">02-Mar 2024</p>
+            <img src="Weather Icons/humidityIcon.svg" alt="Icons" class="icons">
+            <p class="text3">53%</p>
+            <img src="Weather Icons/precipitationIcon.svg" alt="Icons" class="icons1">
+            <p class="text4">10%</p>
+            <img src="Weather Icons/sunnyIcon.svg" alt="Icons" class="icons2">
+            <p class="text5">25°C</p>
+              <img src="Icons for cities/london.svg" alt="Image 1" class="image">
+              
+          </div>
+          <div class="nested-flexbox">
+            <p class="text">London</p>
+            <p class="text1">10.00 AM </p>
+            <p class="text2">02-Mar 2024</p>
+            <img src="Weather Icons/humidityIcon.svg" alt="Icons" class="icons">
+            <p class="text3">53%</p>
+            <img src="Weather Icons/precipitationIcon.svg" alt="Icons" class="icons1">
+            <p class="text4">10%</p>
+            <img src="Weather Icons/sunnyIcon.svg" alt="Icons" class="icons2">
+            <p class="text5">25°C</p>
+              <img src="Icons for cities/london.svg" alt="Image 2" class="image">
+          </div>
+          <div class="nested-flexbox">
+            <p class="text">London</p>
+            <p class="text1">10.00 AM </p>
+            <p class="text2">02-Mar 2024</p>
+            <img src="Weather Icons/humidityIcon.svg"  alt="Icons" class="icons">
+            <p class="text3">53%</p>
+            <img src="Weather Icons/precipitationIcon.svg" alt="Icons" class="icons1">
+            <p class="text4">10%</p>
+            <img src="Weather Icons/sunnyIcon.svg" alt="Icons" class="icons2">
+            <p class="text5">25°C</p>
+              <img src="Icons for cities/london.svg" alt="Image 3" class="image">
+          </div>
+          <div class="nested-flexbox">
+            <p class="text">London</p>
+            <p class="text1">10.00 AM </p>
+            <p class="text2">02-Mar 2024</p>
+            <img src="Weather Icons/humidityIcon.svg" alt="Icons" class="icons">
+            <p class="text3">53%</p>
+            <img src="Weather Icons/precipitationIcon.svg" alt="Icons" class="icons1">
+            <p class="text4">10%</p>
+            <img src="Weather Icons/sunnyIcon.svg" alt="Icons" class="icons2">
+            <p class="text5">25°C</p>
+              <img src="Icons for cities/london.svg" alt="Image 4" class="image">
+          </div>
+      </div>
+      
+        <br>
+        <br>
+
+          <!-- Paragraph -->
+          <div class="city-info">
+            <div class="info-left">
+              <h2 class="city-name">Cities across continents at a Glance</h2>
+            </div>
+            <div class="info-right">
+              <h3 class="city">
+                Continental Name
+                <img class="temperature-image" src="Images icons/arrowDown.svg" alt="Temperature Image">
+              </h3>
+              <h3 class="city">
+                Temperature
+                <img class="temperature-image" src="Images icons/arrowUp.svg" alt="Temperature Image">
+              </h3>
+            </div>
+          </div> 
+      </div> <br> 
+
+        <!-- Box -->
+      <div class="box-container">
+        <div class="boxes">
+          <p class="country">Asia</p>
+          <p class="box1">London, 10.10 AM</p>
+          <p class="degree">38°C</p>
+          <img src="Weather Icons/humidityIcon.svg" alt="Icons" class="dropicon">
+          <p class="degree1">53%</p>
+        </div> 
+        <div class="boxes">
+          <p class="country">Africa</p>
+          <p class="box1">Egypt, 10.10 AM</p>
+          <p class="degree">38°C</p>
+          <img src="Weather Icons/humidityIcon.svg" alt="Icons" class="dropicon">
+          <p class="degree1">53%</p>
+        </div> 
+        <div class="boxes">
+          <p class="country">Europe</p>
+          <p class="box1">London, 10.10 AM</p>
+          <p class="degree">26°C</p>
+          <img src="Weather Icons/humidityIcon.svg" alt="Icons" class="dropicon">
+          <p class="degree1">53%</p>
+        </div> 
+        <div class="boxes">
+          <p class="country">Asia</p>
+          <p class="box1">Chennai, 10.10 AM</p>
+          <p class="degree">37°C</p>
+          <img src="Weather Icons/humidityIcon.svg" alt="Icons" class="dropicon">
+          <p class="degree1">53%</p>
+        </div> 
+        <div class="boxes">
+          <p class="country">Africa</p>
+          <p class="box1">Egypt, 10.10 AM</p>
+          <p class="degree">32°C</p>
+          <img src="Weather Icons/humidityIcon.svg" alt="Icons" class="dropicon">
+          <p class="degree1">53%</p>
+        </div> 
+        <div class="boxes">
+          <p class="country">Europe</p>
+          <p class="box1">London, 10.00 AM</p>
+          <p class="degree">22°C</p>
+          <img src="Weather Icons/humidityIcon.svg" alt="Icons" class="dropicon">
+          <p class="degree1">53%</p>
+        </div> 
+        <div class="boxes">
+          <p class="country">Asia</p>
+          <p class="box1">Chennai, 10.00 AM</p>
+          <p class="degree">36°C</p>
+          <img src="Weather Icons/humidityIcon.svg" alt="Icons" class="dropicon">
+          <p class="degree1">53%</p>
+        </div> 
+        <div class="boxes">
+          <p class="country">Europe</p>
+          <p class="box1">London, 10.00 AM</p>
+          <p class="degree">30°C</p>
+          <img src="Weather Icons/humidityIcon.svg" alt="Icons" class="dropicon">
+          <p class="degree1">53%</p>
+        </div>
+        <div class="boxes">
+          <p class="country">South America</p>
+          <p class="box1">Brazil, 10.00 AM</p>
+          <p class="degree">35°C</p>
+          <img src="Weather Icons/humidityIcon.svg" alt="Icons" class="dropicon">
+          <p class="degree1">53%</p>
+        </div> 
+        <div class="boxes">
+          <p class="country">Asia</p>
+          <p class="box1">London, 10.00 AM</p>
+          <p class="degree">36°C</p>
+          <img src="Weather Icons/humidityIcon.svg" alt="Icons" class="dropicon">
+          <p class="degree1">53%</p>
+        </div> 
+        <div class="boxes">
+          <p class="country">Europe</p>
+          <p class="box1">London, 10.00 AM</p>
+          <p class="degree">28°C</p>
+          <img src="Weather Icons/humidityIcon.svg" alt="Icons" class="dropicon">
+          <p class="degree1">53%</p>
+        </div>
+        <div class="boxes">
+          <p class="country">South America</p>
+          <p class="box1">Brazil, 10.00 AM</p>
+          <p class="degree">32°C</p>
+          <img src="Weather Icons/humidityIcon.svg" alt="Icons" class="dropicon">
+          <p class="degree1">53%</p>
+        </div> 
+        </div>  
+
+      </div>
+  </body>
+  </html>
+  
+
+
